@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.chin.circlelayout.CircleLayout
+        android:id="@+id/normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:innerRadius="80dp"
+        app:angleOffset="225">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="2" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="3" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="4" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="5" />
+    </com.chin.circlelayout.CircleLayout>
+
+    <com.chin.circlelayout.CircleLayout
+        android:id="@+id/normalWithRange"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:visibility="gone"
+        app:angleOffset="180"
+        app:angleRange="180"
+        app:innerRadius="80dp">
+
+        <TextView
+            android:id="@+id/view_first"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="2" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="3" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="4" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="5" />
+    </com.chin.circlelayout.CircleLayout>
+
+    <Button
+        android:id="@+id/switchBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_circle"
+        android:gravity="center"
+        android:text="B" />
+
+    <SeekBar
+        android:id="@+id/numSB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="20dp"
+        android:progress="5"
+        android:max="5"
+        android:min="1" />
+
+</FrameLayout>

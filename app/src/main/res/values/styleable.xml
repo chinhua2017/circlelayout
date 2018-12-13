@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <declare-styleable name="CircleLayout">
+        <attr name="innerRadius" format="dimension" />
+        <attr name="angleOffset" format="float" />
+        <attr name="angleRange" format="float" />
+    </declare-styleable>
+
+</resources>
